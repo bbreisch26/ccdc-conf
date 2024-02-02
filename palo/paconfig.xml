@@ -1236,6 +1236,95 @@
               <telnet>no</telnet>
             </entry>
           </interface-management-profile>
+          <zone-protection-profile>
+            <entry name="default">
+              <flood>
+                <tcp-syn>
+                  <red>
+                    <alarm-rate>10000</alarm-rate>
+                    <activate-rate>10000</activate-rate>
+                    <maximal-rate>40000</maximal-rate>
+                  </red>
+                  <enable>yes</enable>
+                </tcp-syn>
+                <udp>
+                  <red>
+                    <alarm-rate>10000</alarm-rate>
+                    <activate-rate>10000</activate-rate>
+                    <maximal-rate>40000</maximal-rate>
+                  </red>
+                  <enable>yes</enable>
+                </udp>
+                <icmp>
+                  <red>
+                    <alarm-rate>10000</alarm-rate>
+                    <activate-rate>10000</activate-rate>
+                    <maximal-rate>40000</maximal-rate>
+                  </red>
+                  <enable>yes</enable>
+                </icmp>
+                <icmpv6>
+                  <red>
+                    <alarm-rate>10000</alarm-rate>
+                    <activate-rate>10000</activate-rate>
+                    <maximal-rate>40000</maximal-rate>
+                  </red>
+                  <enable>yes</enable>
+                </icmpv6>
+                <other-ip>
+                  <red>
+                    <alarm-rate>10000</alarm-rate>
+                    <activate-rate>10000</activate-rate>
+                    <maximal-rate>40000</maximal-rate>
+                  </red>
+                  <enable>yes</enable>
+                </other-ip>
+              </flood>
+              <net-inspection>
+                <rule/>
+              </net-inspection>
+              <scan-white-list>
+                <entry name="Win10">
+                  <ipv4>172.31.24.5</ipv4>
+                </entry>
+              </scan-white-list>
+              <scan>
+                <entry name="8001">
+                  <action>
+                    <block-ip>
+                      <track-by>source</track-by>
+                      <duration>500</duration>
+                    </block-ip>
+                  </action>
+                  <interval>2</interval>
+                  <threshold>100</threshold>
+                </entry>
+                <entry name="8002">
+                  <action>
+                    <block-ip>
+                      <track-by>source</track-by>
+                      <duration>500</duration>
+                    </block-ip>
+                  </action>
+                  <interval>10</interval>
+                  <threshold>100</threshold>
+                </entry>
+                <entry name="8003">
+                  <action>
+                    <block-ip>
+                      <track-by>source</track-by>
+                      <duration>500</duration>
+                    </block-ip>
+                  </action>
+                  <interval>2</interval>
+                  <threshold>100</threshold>
+                </entry>
+              </scan>
+              <discard-ip-spoof>no</discard-ip-spoof>
+              <strict-ip-check>no</strict-ip-check>
+              <strip-tcp-fast-open-and-data>no</strip-tcp-fast-open-and-data>
+            </entry>
+          </zone-protection-profile>
         </profiles>
         <qos>
           <profile>
@@ -2280,6 +2369,9 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
           <ssl-decrypt>
             <url-proxy>yes</url-proxy>
           </ssl-decrypt>
+          <application>
+            <notify-user>no</notify-user>
+          </application>
         </setting>
       </deviceconfig>
       <vsys>
@@ -2292,6 +2384,8 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                 <layer3>
                   <member>ethernet1/1</member>
                 </layer3>
+                <zone-protection-profile>default</zone-protection-profile>
+                <net-inspection>yes</net-inspection>
               </network>
             </entry>
             <entry name="Internal">
@@ -2299,6 +2393,8 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                 <layer3>
                   <member>ethernet1/2</member>
                 </layer3>
+                <zone-protection-profile>default</zone-protection-profile>
+                <net-inspection>yes</net-inspection>
               </network>
             </entry>
             <entry name="External">
@@ -2308,6 +2404,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                 </layer3>
                 <net-inspection>yes</net-inspection>
                 <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+                <zone-protection-profile>default</zone-protection-profile>
               </network>
             </entry>
             <entry name="trusted">
@@ -2320,6 +2417,8 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                 <layer3>
                   <member>ethernet1/4</member>
                 </layer3>
+                <zone-protection-profile>default</zone-protection-profile>
+                <net-inspection>yes</net-inspection>
               </network>
             </entry>
           </zone>
@@ -2360,7 +2459,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
           <rulebase>
             <security>
               <rules>
-                <entry name="user-paloalto" uuid="6623de4a-fcec-4473-bb58-72bde06e7de5">
+                <entry name="user-paloalto" uuid="22a6b749-32cc-4dec-8aa4-2afaf623deca">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2401,7 +2500,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                     <member>any</member>
                   </destination-hip>
                 </entry>
-                <entry name="user-splunk-web" uuid="d5cb4137-35a0-414c-ae28-7070cce80207">
+                <entry name="user-splunk-web" uuid="0a30e377-0004-4df1-9e75-d9ccd94960ad">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2441,7 +2540,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="user-apt" uuid="3921b48a-40b5-4660-814a-8f4f5ff9e68e">
+                <entry name="user-apt" uuid="3fa98109-3fc7-48c9-9e8e-443cd2766a61">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2483,7 +2582,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   <action>allow</action>
                   <disabled>no</disabled>
                 </entry>
-                <entry name="splunk-syslog" uuid="9e5b17ca-4a04-471a-bc9c-a6252ee1bba8">
+                <entry name="splunk-syslog" uuid="fb75d9ec-8dec-4c23-b7b8-dd84cba27c50">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2523,7 +2622,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="External2ADDNS" uuid="2dfa2af2-de56-4d26-a204-586f5685579a">
+                <entry name="External2ADDNS" uuid="b52d9abe-0710-4165-bff5-39a9c2014ba5">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2549,8 +2648,6 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                     <member>any</member>
                   </category>
                   <application>
-                    <member>active-directory</member>
-                    <member>dhcp</member>
                     <member>dns</member>
                   </application>
                   <service>
@@ -2564,7 +2661,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="External2CentOS" uuid="01f275a2-4a66-42b0-bc85-303f422a8e7d">
+                <entry name="External2CentOS" uuid="6e131858-dcdb-4718-98a0-d4243c581065">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2605,7 +2702,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   <icmp-unreachable>no</icmp-unreachable>
                   <rule-type>universal</rule-type>
                 </entry>
-                <entry name="External2Fedora" uuid="0c0a032f-e014-467b-bc63-f088da644e65">
+                <entry name="External2Fedora" uuid="9ca53295-b263-478b-9404-e02ad3f40362">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2651,7 +2748,7 @@ IMAP
 SMTP
 HTTP</description>
                 </entry>
-                <entry name="External2Debian" uuid="a6678ef1-3eee-4724-8db1-8cde10d18db0">
+                <entry name="External2Debian" uuid="a5b4fb91-a51a-46b1-9dcb-5fa6dd9fd776">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2691,7 +2788,7 @@ HTTP</description>
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="External2UbuntuWeb" uuid="2439b443-4d93-416b-a6ea-6bc17311ae63">
+                <entry name="External2UbuntuWeb" uuid="18b8c240-89c0-4795-8ddc-fe13dac32f53">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2730,7 +2827,7 @@ HTTP</description>
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="any-any" uuid="73f3afa6-1803-461b-b7f5-355f6e8dbfed">
+                <entry name="any-any" uuid="a5df1ea9-4c8c-44b8-9e7d-f74a01915b05">
                   <option>
                     <disable-server-response-inspection>no</disable-server-response-inspection>
                   </option>
@@ -2770,8 +2867,13 @@ HTTP</description>
                     <member>any</member>
                   </destination-hip>
                   <disabled>yes</disabled>
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
                 </entry>
-                <entry name="deny-deny" uuid="8323616d-f605-47f7-a218-0a775de6aea3">
+                <entry name="deny-deny" uuid="f93413fa-4553-46c3-b9d9-49da3230b66b">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -3177,39 +3279,7 @@ HTTP</description>
           </profiles>
           <application-filter/>
           <threats>
-            <vulnerability>
-              <entry name="41111">
-                <signature>
-                  <standard>
-                    <entry name="Bruteforce">
-                      <order-free>no</order-free>
-                      <scope>protocol-data-unit</scope>
-                    </entry>
-                  </standard>
-                </signature>
-                <default-action>
-                  <alert/>
-                </default-action>
-                <cve>
-                  <member>agata</member>
-                </cve>
-                <reference>
-                  <member>charity</member>
-                </reference>
-                <vendor>
-                  <member>dogma</member>
-                </vendor>
-                <bugtraq>
-                  <member>redteam</member>
-                </bugtraq>
-                <threatname>Bruteforce Protection</threatname>
-                <severity>informational</severity>
-                <direction>client2server</direction>
-                <affected-host>
-                  <client>yes</client>
-                </affected-host>
-              </entry>
-            </vulnerability>
+            <vulnerability/>
           </threats>
           <user-id-collector>
             <setting/>
