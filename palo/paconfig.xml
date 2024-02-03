@@ -3,15 +3,7 @@
   <mgt-config>
     <users>
       <entry name="admin">
-        <phash>$1$vvosrqet$MWT61gwnWnlUcEgTRdkK7/</phash>
-        <permissions>
-          <role-based>
-            <superuser>yes</superuser>
-          </role-based>
-        </permissions>
-      </entry>
-      <entry name="administrator">
-        <phash>$1$fvlrcegi$Hl/otBYrhE2hbaWH2fNDE/</phash>
+        <phash>$5$ejglqtgp$/y4h7CN2W3gYZBn20ezxk3ujkEjT8ueGe8yzB8Q8oKD</phash>
         <permissions>
           <role-based>
             <superuser>yes</superuser>
@@ -323,700 +315,7 @@
     </admin-role>
     <ssl-tls-service-profile/>
     <content-preview>
-      <application>
-        <entry id="11578" minver="8.1.0" name="abbott-rals-http" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>medical</subcategory>
-          <technology>client-server</technology>
-          <description>Abbott RALS is a software platform for data management for point-of-care testing (POCT). RALS is a web-based system that effortlessly connects hospital devices used every day at the point of care. This App-ID covers Abbott RALS web service communication.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Abbott RALS">
-              <link>https://www.rals.com/us/en/home/rals-system.html</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>web-browsing</member>
-          </use-applications>
-          <risk>1</risk>
-          <parent-app>web20_parrent_app</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11561" minver="8.1.0" name="canva-downloading" ori_country="USA" ori_language="English">
-          <category>saas</category>
-          <subcategory>design</subcategory>
-          <technology>browser-based</technology>
-          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the downloading traffic of Canva.</description>
-          <appident>yes</appident>
-          <virus-ident>yes</virus-ident>
-          <file-type-ident>yes</file-type-ident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <data-ident>yes</data-ident>
-          <cachable>no</cachable>
-          <file-forward>yes</file-forward>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Downloading]</member>
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="canva">
-              <link>https://about.canva.com/</link>
-            </entry>
-          </references>
-          <use-applications minver="8.1.0">
-            <member minver="8.1.0">canva-base</member>
-          </use-applications>
-          <risk>2</risk>
-          <parent-app>canva-base</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11559" minver="8.1.0" name="canva-base" ori_country="USA" ori_language="English">
-          <ottawa-name>canva</ottawa-name>
-          <category>saas</category>
-          <subcategory>design</subcategory>
-          <technology>browser-based</technology>
-          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the traffic of Canva.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="canva">
-              <link>https://about.canva.com/</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>facebook-base</member>
-            <member minver="3.0.0">google-base</member>
-            <member minver="3.1.0">ms-office365-base</member>
-            <member>ssl</member>
-            <member>web-browsing</member>
-          </use-applications>
-          <tunnel-applications minver="8.1.0">
-            <member minver="8.1.0">canva-downloading</member>
-            <member minver="8.1.0">canva-text-to-image</member>
-            <member minver="8.1.0">canva-uploading</member>
-          </tunnel-applications>
-          <risk>2</risk>
-          <application-container>canva</application-container>
-          <parent-app>office365-enterprise-access</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11559" minver="8.1.0" ori_country="USA" ori_language="English" name="canva">
-          <ottawa-name>canva</ottawa-name>
-          <category>saas</category>
-          <subcategory>design</subcategory>
-          <technology>browser-based</technology>
-          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the traffic of Canva.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="canva">
-              <link>https://about.canva.com/</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>facebook-base</member>
-            <member minver="3.0.0">google-base</member>
-            <member minver="3.1.0">ms-office365-base</member>
-            <member>ssl</member>
-            <member>web-browsing</member>
-          </use-applications>
-          <tunnel-applications minver="8.1.0">
-            <member minver="8.1.0">canva-downloading</member>
-            <member minver="8.1.0">canva-text-to-image</member>
-            <member minver="8.1.0">canva-uploading</member>
-          </tunnel-applications>
-          <risk>2</risk>
-          <application-container>canva</application-container>
-          <parent-app>office365-enterprise-access</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11562" minver="8.1.0" name="canva-text-to-image" ori_country="USA" ori_language="English">
-          <category>saas</category>
-          <subcategory>design</subcategory>
-          <technology>browser-based</technology>
-          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the text-to-image traffic of Canva, which is now part of the Magic Media app.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Generative AI]</member>
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="canva">
-              <link>https://about.canva.com/</link>
-            </entry>
-          </references>
-          <use-applications minver="8.1.0">
-            <member minver="8.1.0">canva-base</member>
-          </use-applications>
-          <risk>1</risk>
-          <parent-app>canva-base</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11560" minver="8.1.0" name="canva-uploading" ori_country="USA" ori_language="English">
-          <category>saas</category>
-          <subcategory>design</subcategory>
-          <technology>browser-based</technology>
-          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the uploading traffic of Canva.</description>
-          <appident>yes</appident>
-          <virus-ident>yes</virus-ident>
-          <file-type-ident>yes</file-type-ident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <data-ident>yes</data-ident>
-          <cachable>no</cachable>
-          <file-forward>yes</file-forward>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Uploading]</member>
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="canva">
-              <link>https://about.canva.com/</link>
-            </entry>
-          </references>
-          <use-applications minver="8.1.0">
-            <member minver="8.1.0">canva-base</member>
-          </use-applications>
-          <risk>2</risk>
-          <parent-app>canva-base</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11590" minver="8.1.0" name="codesys-gateway" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>ics-protocols</subcategory>
-          <technology>client-server</technology>
-          <description>The CODESYS Edge Gateway allows the CODESYS Automation Server and all clients that establish a connection via the Automation Server full access to all services provided by the runtime system via communication interfaces. It can be operated on a controller or on a stand-alone device in the local network. This App-ID covers messages between a client and a CODESYS Gateway.</description>
-          <alg>yes</alg>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="CODESYS GmbH">
-              <link>https://www.codesys.com/</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11582" minver="8.1.0" name="controledge-builder" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>ics-protocols</subcategory>
-          <technology>client-server</technology>
-          <description>Honeywell ControlEdge Builder is an integrated configuration tool to design, configure, program and maintain ControlEdge controllers. This App-ID covers  Honeywell ControlEdge Builder configuration operations from the ControlEdge Builder software to ControlEdge controllers.</description>
-          <alg>yes</alg>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>no</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Honeywell">
-              <link>https://process.honeywell.com/us/en/initiative/control-edge/controledge-family-controller</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11580" minver="8.1.0" name="controledge-builder-discovery" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>ics-protocols</subcategory>
-          <technology>client-server</technology>
-          <description>Honeywell ControlEdge Builder is an integrated configuration tool to design, configure, program and maintain ControlEdge controllers. This App-ID covers  Honeywell ControlEdge Builder discovery messages from ControlEdge Builder software to ControlEdge controllers.</description>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>no</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Honeywell">
-              <link>https://process.honeywell.com/us/en/initiative/control-edge/controledge-family-controller</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11587" minver="8.1.0" name="delta-dcisoft-discovery" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>ics-protocols</subcategory>
-          <technology>client-server</technology>
-          <description>Delta DCISoft software is an integrated configuration tool used for monitoring and configuring Delta PLCs. This App-ID covers discovery messages sent via broadcast from the DCISoft application to Delta PLCs residing on an internal network.</description>
-          <alg>yes</alg>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>no</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Delta">
-              <link>https://www.deltaww.com/en-US/index</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11584" minver="8.1.0" name="delta-hmi" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>ics-protocols</subcategory>
-          <technology>client-server</technology>
-          <description>Delta's human machine interface (HMI) is a platform which permits interaction between users and automation equipment. The color touchscreen enables intuitive parameter entry and a variety of ways to display variable data, including trend graphs and alarm elements. This App-ID covers communication from a workstation running Delta's DIAView software to a Delta HMI device.</description>
-          <alg>yes</alg>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>no</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Delta HMI">
-              <link>https://www.deltaww.com/en-US/Products/Touch-Panel-HMI-Human-Machine-Interfaces/ALL/</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11585" minver="8.1.0" name="delta-hmi-discovery" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>ics-protocols</subcategory>
-          <technology>client-server</technology>
-          <description>Delta's human machine interface (HMI) is a platform which permits interaction between users and automation equipment. The color touchscreen enables intuitive parameter entry and a variety of ways to display variable data, including trend graphs and alarm elements. This App-ID covers device discovery traffic initiated from a workstation running Delta's DIAView software to Delta HMI devices on a local network</description>
-          <alg>yes</alg>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>no</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Delta HMI">
-              <link>https://www.deltaww.com/en-US/Products/Touch-Panel-HMI-Human-Machine-Interfaces/ALL/</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11579" minver="8.1.0" name="fizz" ori_country="USA" ori_language="English">
-          <category>saas</category>
-          <subcategory>social-networking</subcategory>
-          <technology>client-server</technology>
-          <description>Fizz is a private discussion and news feed for school with features such as direct messages, polls, and images. This App-ID covers the traffic for fizz application.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <breaks-decryption>yes</breaks-decryption>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="fizz">
-              <link>https://fizzsocial.app/index.html</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member minver="3.0.0">google-base</member>
-            <member>ssl</member>
-          </use-applications>
-          <implicit-use-applications>
-            <member>ssl</member>
-          </implicit-use-applications>
-          <risk>2</risk>
-          <parent-app>web20_parrent_app</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11588" minver="8.1.0" name="ghostwriter" ori_country="USA" ori_language="English">
-          <category>saas</category>
-          <subcategory>artificial-intelligence</subcategory>
-          <technology>client-server</technology>
-          <description>Ghostwriter is an OpenAI ChatGPT writing assistant add-in for Microsoft Office. This App-ID covers the traffic for Ghostwriter application.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Generative AI]</member>
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="Ghostwriter">
-              <link>https://ghostwriter-ai.com/</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>ssl</member>
-            <member>web-browsing</member>
-          </use-applications>
-          <implicit-use-applications>
-            <member>ssl</member>
-            <member>web-browsing</member>
-          </implicit-use-applications>
-          <risk>1</risk>
-          <parent-app>azure-openai-studio</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11589" minver="8.1.0" name="ha-tunnel-plus" ori_country="USA" ori_language="English">
-          <category>networking</category>
-          <subcategory>encrypted-tunnel</subcategory>
-          <technology>client-server</technology>
-          <description>HA Tunnel Plus is a free VPN app that allows users to create their own custom VPN configurations. This App-ID covers the traffic for HA Tunnel Plus application.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>yes</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>yes</tunnel-other-application>
-          <prone-to-misuse>yes</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <breaks-decryption>yes</breaks-decryption>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="Google Play Store">
-              <link>https://play.google.com/store/apps/details?id=com.hatunnel.plus&amp;amp;hl=en_US</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>ssl</member>
-          </use-applications>
-          <implicit-use-applications>
-            <member>ssl</member>
-          </implicit-use-applications>
-          <risk>4</risk>
-          <parent-app>web20_parrent_app</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11586" minver="8.1.0" name="ms-powerapps" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>office-programs</subcategory>
-          <technology>browser-based</technology>
-          <description>Microsoft Power Apps is a suite of apps, services, connectors and data platforms that provides a development environment to build custom apps for business needs. This App-ID covers the traffic of Microsoft Power Apps.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>yes</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <can-disable>yes</can-disable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Generative AI]</member>
-            <member>[Office 365]</member>
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="Microsoft">
-              <link>https://learn.microsoft.com/en-us/power-apps/powerapps-overview</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>microsoft-dynamics-crm</member>
-          </use-applications>
-          <risk>2</risk>
-          <parent-app>office365-enterprise-access</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11583" minver="8.1.0" name="promethean-screenshare" ori_country="USA" ori_language="English">
-          <category>business-systems</category>
-          <subcategory>general-business</subcategory>
-          <technology>client-server</technology>
-          <description>Promethean Screen Share is a sharing solution which allows one or more devices to share their screen onto another. This App-ID covers the traffic for Promethean Screen Share application.</description>
-          <appident>yes</appident>
-          <vulnerability-ident>yes</vulnerability-ident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>yes</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <is-saas>yes</is-saas>
-          <saas minver="8.1.0">
-            <is-data-breaches>no</is-data-breaches>
-            <is-ip-based-restrictions>no</is-ip-based-restrictions>
-            <is-poor-financial-viability>no</is-poor-financial-viability>
-            <is-poor-terms-of-service>no</is-poor-terms-of-service>
-          </saas>
-          <tag minver="9.1.0">
-            <member>[Web App]</member>
-          </tag>
-          <references>
-            <entry name="Promethean Screen Share">
-              <link>https://support.prometheanworld.com/s/article/1770?language=en_US</link>
-            </entry>
-          </references>
-          <use-applications>
-            <member>ssl</member>
-          </use-applications>
-          <implicit-use-applications>
-            <member>ssl</member>
-          </implicit-use-applications>
-          <risk>1</risk>
-          <parent-app>web20_parrent_app</parent-app>
-          <preview>yes</preview>
-        </entry>
-        <entry id="11581" minver="8.1.0" name="stretchoid-scanning" ori_country="USA" ori_language="English">
-          <category>general-internet</category>
-          <subcategory>internet-utility</subcategory>
-          <technology>client-server</technology>
-          <description>Stretchoid is a platform that helps identify an organization's online services. This App-ID covers the scanning traffic of Stretchoid.</description>
-          <appident>yes</appident>
-          <evasive-behavior>no</evasive-behavior>
-          <consume-big-bandwidth>no</consume-big-bandwidth>
-          <used-by-malware>no</used-by-malware>
-          <able-to-transfer-file>no</able-to-transfer-file>
-          <has-known-vulnerability>no</has-known-vulnerability>
-          <tunnel-other-application>no</tunnel-other-application>
-          <prone-to-misuse>no</prone-to-misuse>
-          <pervasive-use>no</pervasive-use>
-          <per-direction-regex>no</per-direction-regex>
-          <deny-action>drop-reset</deny-action>
-          <cachable>no</cachable>
-          <new-appid>yes</new-appid>
-          <references>
-            <entry name="Stretchoid">
-              <link>https://stretchoid.com/</link>
-            </entry>
-          </references>
-          <risk>1</risk>
-          <preview>yes</preview>
-        </entry>
-      </application>
+      <application/>
       <application-type>
         <category>
           <entry name="saas" id="6">
@@ -1090,25 +389,12 @@
               <layer3>
                 <ipv6>
                   <neighbor-discovery>
-                    <router-advertisement>
-                      <enable>no</enable>
-                      <min-interval>200</min-interval>
-                      <max-interval>600</max-interval>
-                      <hop-limit>64</hop-limit>
-                      <reachable-time>unspecified</reachable-time>
-                      <retransmission-timer>unspecified</retransmission-timer>
-                      <lifetime>1800</lifetime>
-                      <managed-flag>no</managed-flag>
-                      <other-flag>no</other-flag>
-                      <enable-consistency-check>no</enable-consistency-check>
-                      <link-mtu>unspecified</link-mtu>
-                    </router-advertisement>
                     <enable-dad>no</enable-dad>
                     <reachable-time>30</reachable-time>
                     <ns-interval>1</ns-interval>
                     <dad-attempts>1</dad-attempts>
                   </neighbor-discovery>
-                  <enabled>no</enabled>
+                  <enabled>yes</enabled>
                   <interface-id>EUI-64</interface-id>
                 </ipv6>
                 <untagged-sub-interface>no</untagged-sub-interface>
@@ -1116,6 +402,19 @@
                 <ip>
                   <entry name="172.20.241.254/24"/>
                 </ip>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip/>
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <enable>no</enable>
+                </lldp>
               </layer3>
             </entry>
             <entry name="ethernet1/2">
@@ -1126,25 +425,12 @@
               <layer3>
                 <ipv6>
                   <neighbor-discovery>
-                    <router-advertisement>
-                      <enable>no</enable>
-                      <min-interval>200</min-interval>
-                      <max-interval>600</max-interval>
-                      <hop-limit>64</hop-limit>
-                      <reachable-time>unspecified</reachable-time>
-                      <retransmission-timer>unspecified</retransmission-timer>
-                      <lifetime>1800</lifetime>
-                      <managed-flag>no</managed-flag>
-                      <other-flag>no</other-flag>
-                      <enable-consistency-check>no</enable-consistency-check>
-                      <link-mtu>unspecified</link-mtu>
-                    </router-advertisement>
                     <enable-dad>no</enable-dad>
                     <reachable-time>30</reachable-time>
                     <ns-interval>1</ns-interval>
                     <dad-attempts>1</dad-attempts>
                   </neighbor-discovery>
-                  <enabled>no</enabled>
+                  <enabled>yes</enabled>
                   <interface-id>EUI-64</interface-id>
                 </ipv6>
                 <untagged-sub-interface>no</untagged-sub-interface>
@@ -1152,6 +438,19 @@
                 <ip>
                   <entry name="172.20.240.254/24"/>
                 </ip>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip/>
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <enable>no</enable>
+                </lldp>
               </layer3>
             </entry>
             <entry name="ethernet1/3">
@@ -1199,16 +498,25 @@
             <entry name="ethernet1/4">
               <layer3>
                 <ipv6>
-                  <neighbor-discovery>
-                    <router-advertisement>
-                      <enable>no</enable>
-                    </router-advertisement>
-                  </neighbor-discovery>
+                  <enabled>yes</enabled>
                 </ipv6>
                 <ip>
                   <entry name="172.20.242.254/24"/>
                 </ip>
                 <interface-management-profile>Base</interface-management-profile>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip/>
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <enable>no</enable>
+                </lldp>
               </layer3>
               <comment>USER</comment>
             </entry>
@@ -1576,6 +884,7 @@
                     <primary>172.20.241.27</primary>
                     <secondary>172.20.240.23</secondary>
                   </dns>
+                  <subnet-mask>255.255.255.0</subnet-mask>
                 </option>
                 <ip-pool>
                   <member>172.20.242.101-172.20.242.150</member>
@@ -1606,6 +915,7 @@
                     <timeout>1440</timeout>
                   </lease>
                   <gateway>172.20.240.254</gateway>
+                  <subnet-mask>255.255.255.0</subnet-mask>
                 </option>
                 <ip-pool>
                   <member>172.20.240.101-172.20.240.150</member>
@@ -2459,7 +1769,164 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
           <rulebase>
             <security>
               <rules>
-                <entry name="user-paloalto" uuid="22a6b749-32cc-4dec-8aa4-2afaf623deca">
+                <entry name="Debian2ExternalNTP" uuid="27e9198e-a63a-495e-97cb-9eb96f11ebab">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>External</member>
+                  </to>
+                  <from>
+                    <member>Internal</member>
+                  </from>
+                  <source>
+                    <member>Debian</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                </entry>
+                <entry name="Internal2DebianNTP" uuid="f6319baa-7f9d-44e1-a938-8f588865afdd">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>Internal</member>
+                  </to>
+                  <from>
+                    <member>Internal</member>
+                    <member>Public</member>
+                    <member>User</member>
+                  </from>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>Debian</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>ntp-base</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                </entry>
+                <entry name="SplunkDNS" uuid="484f77ac-f6ca-4762-ba49-772f5d31ac84">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>any</member>
+                  </to>
+                  <from>
+                    <member>Public</member>
+                  </from>
+                  <source>
+                    <member>Splunk</member>
+                  </source>
+                  <destination>
+                    <member>2019ADDNS</member>
+                    <member>Debian</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>dns</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                </entry>
+                <entry name="Fedora2AnyInternal" uuid="7c471f06-7226-4f62-9aab-53a441956bc1">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>Internal</member>
+                    <member>Public</member>
+                    <member>User</member>
+                  </to>
+                  <from>
+                    <member>Public</member>
+                  </from>
+                  <source>
+                    <member>Fedora</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>dns</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                </entry>
+                <entry name="user-paloalto" uuid="1e0df854-0cb8-49ba-8de8-9b56826f33f0">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2500,7 +1967,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                     <member>any</member>
                   </destination-hip>
                 </entry>
-                <entry name="user-splunk-web" uuid="0a30e377-0004-4df1-9e75-d9ccd94960ad">
+                <entry name="user-splunk-web" uuid="2e586555-0a6a-48c5-9b75-615a8e487299">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2540,7 +2007,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="user-apt" uuid="3fa98109-3fc7-48c9-9e8e-443cd2766a61">
+                <entry name="user-updates" uuid="9b042361-6bdc-4484-a38d-f2a609df5102">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2569,6 +2036,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   <application>
                     <member>apt-get</member>
                     <member>dns</member>
+                    <member>yum</member>
                   </application>
                   <service>
                     <member>application-default</member>
@@ -2582,14 +2050,53 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   <action>allow</action>
                   <disabled>no</disabled>
                 </entry>
-                <entry name="splunk-syslog" uuid="fb75d9ec-8dec-4c23-b7b8-dd84cba27c50">
+                <entry name="user-pa-updates" uuid="dad55c4e-ae50-4ebd-94e2-e59c03e9c92a">
                   <profile-setting>
                     <group>
                       <member>default</member>
                     </group>
                   </profile-setting>
                   <to>
-                    <member>Public</member>
+                    <member>External</member>
+                  </to>
+                  <from>
+                    <member>any</member>
+                  </from>
+                  <source>
+                    <member>172.20.242.150</member>
+                    <member>172.31.24.2</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                </entry>
+                <entry name="splunk-syslog" uuid="9d5958b0-c3f5-4758-a707-98c5602212f7">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>any</member>
                   </to>
                   <from>
                     <member>Internal</member>
@@ -2600,6 +2107,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                     <member>any</member>
                   </source>
                   <destination>
+                    <member>EXT-Splunk</member>
                     <member>Splunk</member>
                   </destination>
                   <source-user>
@@ -2609,6 +2117,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                     <member>any</member>
                   </category>
                   <application>
+                    <member>splunk</member>
                     <member>syslog</member>
                   </application>
                   <service>
@@ -2622,7 +2131,46 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="External2ADDNS" uuid="b52d9abe-0710-4165-bff5-39a9c2014ba5">
+                <entry name="Win102Splunk" uuid="f4d7487b-2f85-479a-bfb1-8218581eb6d8">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>any</member>
+                  </to>
+                  <from>
+                    <member>External</member>
+                  </from>
+                  <source>
+                    <member>172.31.24.5</member>
+                  </source>
+                  <destination>
+                    <member>EXT-Splunk</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>ssl</member>
+                    <member>web-browsing</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                </entry>
+                <entry name="External2ADDNS" uuid="6ab10798-3bed-4688-8e01-ef4aaaf2c78c">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2661,7 +2209,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="External2CentOS" uuid="6e131858-dcdb-4718-98a0-d4243c581065">
+                <entry name="External2CentOS" uuid="d800636f-3aea-467d-ae73-08daa430bd29">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2701,8 +2249,9 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   <action>allow</action>
                   <icmp-unreachable>no</icmp-unreachable>
                   <rule-type>universal</rule-type>
+                  <disabled>no</disabled>
                 </entry>
-                <entry name="External2Fedora" uuid="9ca53295-b263-478b-9404-e02ad3f40362">
+                <entry name="External2Fedora" uuid="00b9ec70-611e-4d25-b900-9cdeffa25581">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2730,7 +2279,7 @@ K3hWNASBk4UAUVw4iq5ystEtD0sLQUI3bu3qf//Z
                   <application>
                     <member>imap</member>
                     <member>pop3</member>
-                    <member>smtp</member>
+                    <member>smtp-base</member>
                     <member>web-browsing</member>
                   </application>
                   <service>
@@ -2748,7 +2297,7 @@ IMAP
 SMTP
 HTTP</description>
                 </entry>
-                <entry name="External2Debian" uuid="a5b4fb91-a51a-46b1-9dcb-5fa6dd9fd776">
+                <entry name="External2Debian" uuid="8c27e311-5d4a-4cb7-bdea-d9caf21a7237">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2788,7 +2337,7 @@ HTTP</description>
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="External2UbuntuWeb" uuid="18b8c240-89c0-4795-8ddc-fe13dac32f53">
+                <entry name="External2UbuntuWeb" uuid="e4503ba3-cb38-4654-9c39-e978a055d12e">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -2827,7 +2376,48 @@ HTTP</description>
                   </destination-hip>
                   <action>allow</action>
                 </entry>
-                <entry name="any-any" uuid="a5df1ea9-4c8c-44b8-9e7d-f74a01915b05">
+                <entry name="External2Splunk" uuid="a9f838dc-76b2-49be-baca-3d64e40e9a0d">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>Public</member>
+                  </to>
+                  <from>
+                    <member>External</member>
+                  </from>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>EXT-Splunk</member>
+                    <member>Splunk</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>ssl</member>
+                    <member>web-browsing</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                  <disabled>no</disabled>
+                </entry>
+                <entry name="any-any" uuid="a1bf901d-f83f-4533-8b32-8b59e1c2d8b7">
                   <option>
                     <disable-server-response-inspection>no</disable-server-response-inspection>
                   </option>
@@ -2873,7 +2463,49 @@ HTTP</description>
                     </group>
                   </profile-setting>
                 </entry>
-                <entry name="deny-deny" uuid="f93413fa-4553-46c3-b9d9-49da3230b66b">
+                <entry name="generic-p2p-deny" uuid="e3f55967-22bf-4781-b5ac-1489f1dc5e33">
+                  <profile-setting>
+                    <group>
+                      <member>default</member>
+                    </group>
+                  </profile-setting>
+                  <to>
+                    <member>any</member>
+                  </to>
+                  <from>
+                    <member>any</member>
+                  </from>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>ants-p2p</member>
+                    <member>bittorrent</member>
+                    <member>generic-p2p</member>
+                    <member>share-p2p</member>
+                    <member>unknown-p2p</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>deny</action>
+                </entry>
+                <entry name="deny-deny" uuid="c86d3945-1541-4c8c-b478-f23cd0c46af2">
                   <profile-setting>
                     <group>
                       <member>default</member>
@@ -3246,6 +2878,9 @@ HTTP</description>
             <entry name="EXT-Fedora">
               <ip-netmask>172.25.24.39</ip-netmask>
             </entry>
+            <entry name="EXT-Splunk">
+              <ip-netmask>172.25.24.9</ip-netmask>
+            </entry>
           </address>
           <profiles>
             <hip-objects>
@@ -3276,6 +2911,131 @@ HTTP</description>
               </entry>
             </hip-profiles>
             <custom-url-category/>
+            <virus>
+              <entry name="strict">
+                <decoder>
+                  <entry name="ftp">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                  <entry name="http">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                  <entry name="http2">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                  <entry name="imap">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                  <entry name="pop3">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                  <entry name="smb">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                  <entry name="smtp">
+                    <action>reset-both</action>
+                    <wildfire-action>reset-both</wildfire-action>
+                    <mlav-action>reset-both</mlav-action>
+                  </entry>
+                </decoder>
+                <packet-capture>yes</packet-capture>
+                <mlav-engine-filebased-enabled>
+                  <entry name="Windows Executables">
+                    <mlav-policy-action>disable</mlav-policy-action>
+                  </entry>
+                  <entry name="PowerShell Script 1">
+                    <mlav-policy-action>disable</mlav-policy-action>
+                  </entry>
+                  <entry name="PowerShell Script 2">
+                    <mlav-policy-action>disable</mlav-policy-action>
+                  </entry>
+                  <entry name="Executable Linked Format">
+                    <mlav-policy-action>disable</mlav-policy-action>
+                  </entry>
+                  <entry name="MSOffice">
+                    <mlav-policy-action>disable</mlav-policy-action>
+                  </entry>
+                  <entry name="Shell">
+                    <mlav-policy-action>disable</mlav-policy-action>
+                  </entry>
+                </mlav-engine-filebased-enabled>
+              </entry>
+            </virus>
+            <vulnerability>
+              <entry name="dystopian">
+                <rules>
+                  <entry name="lessdystopic">
+                    <action>
+                      <alert/>
+                    </action>
+                    <vendor-id>
+                      <member>any</member>
+                    </vendor-id>
+                    <severity>
+                      <member>informational</member>
+                    </severity>
+                    <cve>
+                      <member>any</member>
+                    </cve>
+                    <threat-name>any</threat-name>
+                    <host>any</host>
+                    <category>any</category>
+                    <packet-capture>single-packet</packet-capture>
+                  </entry>
+                  <entry name="dystopia">
+                    <action>
+                      <block-ip>
+                        <duration>300</duration>
+                        <track-by>source</track-by>
+                      </block-ip>
+                    </action>
+                    <vendor-id>
+                      <member>any</member>
+                    </vendor-id>
+                    <severity>
+                      <member>critical</member>
+                      <member>medium</member>
+                      <member>high</member>
+                      <member>low</member>
+                    </severity>
+                    <cve>
+                      <member>any</member>
+                    </cve>
+                    <threat-name>any</threat-name>
+                    <host>any</host>
+                    <category>any</category>
+                    <packet-capture>disable</packet-capture>
+                  </entry>
+                </rules>
+                <mica-engine-vulnerability-enabled>
+                  <entry name="SQL Injection">
+                    <inline-policy-action>alert</inline-policy-action>
+                  </entry>
+                  <entry name="Command Injection">
+                    <inline-policy-action>alert</inline-policy-action>
+                  </entry>
+                </mica-engine-vulnerability-enabled>
+                <threat-exception>
+                  <entry name="56610">
+                    <action>
+                      <default/>
+                    </action>
+                  </entry>
+                </threat-exception>
+              </entry>
+            </vulnerability>
           </profiles>
           <application-filter/>
           <threats>
@@ -3287,13 +3047,13 @@ HTTP</description>
           <profile-group>
             <entry name="default">
               <virus>
-                <member>default</member>
+                <member>strict</member>
               </virus>
               <spyware>
                 <member>strict</member>
               </spyware>
               <vulnerability>
-                <member>strict</member>
+                <member>dystopian</member>
               </vulnerability>
               <url-filtering>
                 <member>default</member>
